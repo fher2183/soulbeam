@@ -168,4 +168,8 @@ For support, email support@soulbeam.com or create an issue on GitHub.
 
 ---
 
-**Made with ❤️ for church communities worldwide**
+**Made with effort and heart every detail.**
+
+---
+
+**Author: Fernando Martinez.**
