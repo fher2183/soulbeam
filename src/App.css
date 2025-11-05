@@ -1,5 +1,48 @@
+/* Main App Layout Styles */
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main content area that adjusts to sidebar */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+/* When sidebar is open (280px width) */
+.main-content.sidebar-open {
+  margin-left: 280px;
+}
+
+/* When sidebar is closed (80px width) */
+.main-content.sidebar-closed {
+  margin-left: 80px;
+}
+
+/* Content area within main-content */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content.sidebar-open,
+  .main-content.sidebar-closed {
+    margin-left: 0;
+  }
+}
+
+/* Reset default React styles */
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
